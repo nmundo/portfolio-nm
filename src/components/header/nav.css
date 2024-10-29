@@ -1,0 +1,78 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-list-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-right: 150px;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--text-light);
+    padding-left: 20px;
+    width: 150px;
+}
+
+.brand h2 {
+    margin: 0;
+    color: var(--accent);
+}
+
+.nav-item {
+    transition: transform 0.3s ease;
+}
+
+.nav-item:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: var(--card-light);
+    color: var(--text-light);
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+@media (prefers-color-scheme: dark) {
+    .nav-link {
+        background-color: var(--card-dark);
+        color: var(--text-dark);
+    }
+
+    .nav-link:hover {
+        background-color: var(--hover-dark);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .nav-link:hover {
+        background-color: var(--hover-light);
+    }
+}

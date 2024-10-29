@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Anta';
+    src: url('src/assets/fonts/Anta-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1000px;
+    align-items: center;
+}
+
+.about-image img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+.about-heading {
+    font-family: 'Anta', sans-serif;
+    max-width: 600px;
+}
+
+.about-heading h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about-heading p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
+.about-subheading {
+    font-family: 'Anta', sans-serif;
+    max-width: 600px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .about-content p {
+        color: var(--text-dark);
+    }
+}
