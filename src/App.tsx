@@ -1,6 +1,6 @@
 import Header from './components/header/Header.tsx';
 import './App.css'
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import About from "./components/about/About.tsx";
 
 function App() {
@@ -8,7 +8,12 @@ function App() {
     <>
         <BrowserRouter>
             <Header />
-            <About />
+            <Routes>
+                <Route path="/" element={<About />} />
+                <Route path="/about" element={<About />} />
+                {/*<Route path="/skills" element={<Skills />} />*/}
+                {/*<Route path="/experience" element={<Experience />} />*/}
+            </Routes>
         </BrowserRouter>
     </>
   )

@@ -21,6 +21,7 @@ const Nav: React.FC = () => {
                     </li>
                 </ul>
             </div>
+            {/* TODO: Add github and linkedin icons */}
         </nav>
     );
 };

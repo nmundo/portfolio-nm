@@ -76,3 +76,20 @@
         background-color: var(--hover-light);
     }
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-list-container {
+        padding: 0;
+    }
+
+    .brand {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
