@@ -1,10 +1,3 @@
-@font-face {
-    font-family: 'Anta';
-    src: url('src/assets/fonts/Anta-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
 .about {
     padding: 40px 20px;
     display: flex;
@@ -26,28 +19,26 @@
 }
 
 .about-heading {
-    font-family: 'Anta', sans-serif;
     max-width: 600px;
-}
-
-.about-heading h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.about-heading p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: var(--text-light);
 }
 
 .about-subheading {
     font-family: 'Anta', sans-serif;
-    max-width: 600px;
+    max-width: 1000px;
 }
 
-@media (prefers-color-scheme: dark) {
-    .about-content p {
-        color: var(--text-dark);
-    }
+.about-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.about-skills-item {
+    font-size: 1.2em;
+    background-color: var(--card-light);
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
 }

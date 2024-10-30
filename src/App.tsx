@@ -2,6 +2,8 @@ import Header from './components/header/Header.tsx';
 import './App.css'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import About from "./components/about/About.tsx";
+import Skills from "./components/skills/Skills.tsx";
+import Experience from "./components/experience/Experience.tsx";
 
 function App() {
   return (
@@ -11,8 +13,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<About />} />
                 <Route path="/about" element={<About />} />
-                {/*<Route path="/skills" element={<Skills />} />*/}
-                {/*<Route path="/experience" element={<Experience />} />*/}
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/experience" element={<Experience />} />
             </Routes>
         </BrowserRouter>
     </>

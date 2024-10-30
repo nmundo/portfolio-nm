@@ -10,6 +10,19 @@
   --accent: #2D61FC;
 }
 
+@font-face {
+  font-family: 'Anta';
+  src: url('src/assets/fonts/Anta-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.heading {
+  font-family: 'Anta', sans-serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
